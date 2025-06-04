@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    overflow: visible;
+    width: 100%;
+}
+
+
+input {
+    outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .input_red {
+        border-color: red !important;
+    }
+}
+
+
+
+
+.loadbtn {
+    animation: loading 1s linear 0s infinite forwards;
+}
+
+@keyframes loading {
+    0% {
+
+        transform: rotate(360deg);
+        /* پایان با چرخش کامل 360 درجه */
+    }
+
+    100% {
+        transform: rotate(0deg);
+        /* شروع با زاویه صفر */
+    }
+}
+
+.Notfication-line{
+    animation: notfication 2s linear 0s  forwards;
+}
+@keyframes notfication {
+    0%{
+        
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
